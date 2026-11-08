@@ -5,4 +5,11 @@ order: 110
 flatten: true
 ---
 
-Bringing LVGL to a new platform means supplying a tick source, a display flush callback that pushes rendered pixels to the panel, and input read callbacks for touch, keypad, or encoder devices. If you run under an RTOS, you also wire the OS primitives (threads, mutexes) through the abstraction layer. The examples here show each hook in isolation so you can port them one at a time.
+Bringing LVGL to a new platform means supplying a tick source, a display flush callback that pushes
+rendered pixels to the panel, and input read callbacks for touch, keypad, or encoder devices. If you
+run under an RTOS, you also wire the OS primitives (threads, mutexes) through the abstraction layer.
+The examples here show each hook in isolation so you can port them one at a time.
+
+For the GothRTOS GothGfx/Lua integration, see the
+[GothRTOS port example](./gothrtos.md) and its
+[`lv_port_gothrtos.c`](./lv_port_gothrtos.c) adapter.
